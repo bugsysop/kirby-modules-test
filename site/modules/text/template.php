@@ -1,1 +1,1 @@
-<?php echo $module->content->kirbytext() ?>
+<?php echo $module->content()->kirbytext() ?>
