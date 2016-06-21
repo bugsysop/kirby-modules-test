@@ -4,7 +4,7 @@
   <?php if(!$module->subtitle()->empty()): ?>
     <?php echo $module->subtitle()->kirbytext() ?>
   <?php endif; ?>
-  <?php if(isset($module->content)): ?>
-    <?php echo $module->content->modules() ?>
+  <?php if($module->content()->isNotEmpty()): ?>
+    <?php echo $module->module_field_name()->modules() ?>
   <?php endif; ?>
 </div>
