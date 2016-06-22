@@ -5,6 +5,6 @@
     <?php echo $module->subtitle()->kirbytext() ?>
   <?php endif; ?>
   <?php if($module->content()->isNotEmpty()): ?>
-    <?php echo $module->module_field_name()->modules() ?>
+    <?php echo $module->content()->modules() ?>
   <?php endif; ?>
 </div>
